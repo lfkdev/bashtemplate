@@ -5,7 +5,8 @@ Use this bash template for clean output and better error handling
 
 The following functions are included:
 
-To get the info Output:
+There are the following output classes: info, warn, success, debug and error.
+The classes are structured as follows (info function as example):
 ```bash
 info() {
   local _date
@@ -13,4 +14,3 @@ info() {
   echo -e "[$_date][INFO]: $1 "
 } 
 ```
-Usage: info "this is a text"
