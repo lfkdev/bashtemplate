@@ -53,3 +53,23 @@ readonly green="\\033[0;32m"
 readonly yellow="\\033[0;33m"
 readonly purple="\\033[0;35m"
 ```
+
+## Quick Start:
+Just download the script
+```bash
+wget -O mynewscript.sh https://raw.githubusercontent.com/lfkdev/bashtemplate/master/template_script.bash
+chmod +x mynewscript.sh
+```
+
+Fill in your info in the metabox
+```bash
+####################################################
+# Author:                                          #
+# Info:                                            #
+# License:                                         #
+####################################################
+```
+
+Now start create your code with the output functions and write every function in the main one! Have fun
+
+If you have any problems or whishes let me now.
