@@ -1,5 +1,7 @@
-# bashtemplate
+# Bash template
 Use this bash template for your next script for clean output and better error handling.
+This script is based on the rules of [Googles Styleguide] (https://google.github.io/styleguide/shell.xml)
+and [bahamas10's Styguide] (https://github.com/bahamas10/bash-style-guide)
 
 Output example:
 <p align="center">
