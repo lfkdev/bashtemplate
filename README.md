@@ -1,5 +1,5 @@
 # bashtemplate
-Use this bash template for clean output and better error handling.
+Use this bash template for your next script for clean output and better error handling.
 
 Output example:
 <p align="center">
