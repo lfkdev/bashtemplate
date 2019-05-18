@@ -1,7 +1,7 @@
 # bashtemplate
 Use this bash template for clean output and better error handling
 
-![output preview](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![output preview](https://s18.directupload.net/images/190518/92au6td4.png)
 
 The following functions are included:
 
