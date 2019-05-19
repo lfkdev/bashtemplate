@@ -32,14 +32,14 @@ err "Error, exiting now!"
 
 In addition, some functions have more features than just clean output.
 ### Debug function
-The debug() funktion will only show up if boolean 'is_debug' is true. This is made by the -d parameter. So Devs can just execute the script with -d to view all debug messages.
+The debug() funktion will only show up if boolean 'is_debug' is true. This is made by the -d parameter. So devs can just execute the script with -d to view all debug messages.
 ```bash
 $ bash /usr/local/bin/script.sh -d
 ```
-### Error function
-The err() funktion redirects the Message to STDERR, 
+### Die function
+The die() funktion redirects the message to STDERR, 
 starts the cleanup function and then exits.
-You can call err() with "1" as argument to show the help before exiting.
+You can call die() with "1" as argument to show the help before exiting.
 ```bash
 err "Please use parameter." 1
 ```
@@ -70,6 +70,6 @@ Fill in your info in the metabox
 ####################################################
 ```
 
-Now start create your code with the output functions and write every function in the main one! Have fun
+Now start creating your code with the output functions and write every function in the main one! Have fun
 
 If you have any problems or whishes let me now.
