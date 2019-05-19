@@ -21,7 +21,7 @@ info() {
 ```
 
 So you can easily filter the output your script produces.
-Example usage (also the code behind the example screenshot):
+Example usage:
 ```bash
 info " I am some random Info."
 warn "This is not normal!"
