@@ -25,9 +25,10 @@ Example usage (also the code behind the example screenshot):
 ```bash
 info " I am some random Info."
 warn "This is not normal!"
-suc "Finished without errors!"
+succ "Finished without errors!"
 debug "I'm some info just for the devs!"
-err "Error, exiting now!"
+err "Error, something is wrong!"
+die "Error, exiting now!"
 ```
 
 In addition, some functions have more features than just clean output.
