@@ -23,7 +23,7 @@ info() {
 So you can easily filter the output your script produces.
 Example usage:
 ```bash
-info " I am some random Info."
+info " I am some random info."
 warn "This is not normal!"
 succ "Finished without errors!"
 debug "I'm some info just for the devs!"
