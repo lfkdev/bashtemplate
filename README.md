@@ -42,7 +42,7 @@ The die() funktion redirects the message to STDERR,
 starts the cleanup function and then exits.
 You can call die() with "1" as argument to show the help before exiting.
 ```bash
-err "Please use parameter." 1
+die "Please use parameter." 1
 ```
 
 ## Changing Colors
