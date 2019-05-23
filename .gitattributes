@@ -1,1 +1,2 @@
+# linefeed instead of CLRG
 *.sln text eol=lf
