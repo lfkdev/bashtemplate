@@ -37,13 +37,27 @@ The debug() funktion will only show up if boolean 'is_debug' is true. This is ma
 ```bash
 $ bash /usr/local/bin/script.sh -d
 ```
-### Die function
-The die() funktion redirects the message to STDERR, 
+### Err-Die function
+The err_die() funktion redirects the message to STDERR, 
 starts the cleanup function and then exits.
-You can call die() with "1" as argument to show the help before exiting.
+You can call err_die() with "1" as argument to show the help before exiting.
 ```bash
-die "Please use parameter." 1
+err_die "Please use parameter." 1
 ```
+You can call normal errors without exiting the script by just 
+```bash
+err "This is an error but I can continue anyway."
+```
+
+### Traps
+The following traps are builtin:
+```bash
+trap exit_EXIT EXIT
+trap exit_CTRL QUIT
+trap exit_CTRL SIGINT
+```
+This way the Script catches when the user is pressing strg+c or the script get interrupted by other ways.
+That way you can call the cleanup function even if the script dies while running.
 
 ## Changing Colors
 Just change the color pallet values at the top of the script as you whish.

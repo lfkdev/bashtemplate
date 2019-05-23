@@ -15,26 +15,27 @@ readonly purple="\\033[0;35m"
 
 is_debug=false # debugmode
 
-#catch getting closed and interrupted by ctrl+c
 trap exit_EXIT EXIT
 trap exit_CTRL QUIT
 trap exit_CTRL SIGINT
 
 main() {
-  #function1
-  #function2
+  example
 }
 
-# The err() function redirects output to STDERR
+example() {
+  info "Information"
+  warn "Warning!"
+  succ "Success!"
+  debug "Debug"
+}
+
 err() { 
   local _date
   _date=$(showdate)
   echo -e "[$_date][${red}ERROR${cf}]: $1" 1>&2
 }
 
-# The err_die() function redirects the message to STDERR, 
-# starts the cleanup function and then exits.
-# You can call err_die() with "1" as argument to show the help before exiting.
 err_die() {
   local _date
   _date=$(showdate)
@@ -44,12 +45,9 @@ err_die() {
   if [[ "$2" == "1" ]]; then
     showhelp
   fi
-  exit 1 #or use $2 instead of 1 to work with exit arguments
+  exit 1
 }
 
-# The following function warn, info, succ and debug are for
-# output information, use warn for warnings, succ for success etc.
-# You can change the colors at the top.
 warn() {
   local _date
   _date=$(showdate)
@@ -71,10 +69,9 @@ succ() {
 showdate() {
   local _date
   _date=$(date +%d-%H.%M)
-  printf "$_date"
+  printf "%s" "$_date"
 }
 
-# The debug() funktion will only show up if boolean 'is_debug' is true
 debug () {
   local _date
   _date=$(showdate)
@@ -96,7 +93,6 @@ exit_CTRL() {
 
 cleanup() {
   info "cleanup.."
-  # cleanup tmp files, kill process etc.
 }
 
 showhelp() {
@@ -111,8 +107,6 @@ showhelp() {
   echo ""
 }
 
-# Add all the parameter you whish, -h will show help and -d will
-# trigger debug messages to show up
 while getopts ":hd" o; do
     case "${o}" in
         h)
@@ -129,6 +123,3 @@ while getopts ":hd" o; do
 done
 
 main
-trap exit_EXIT EXIT
-trap exit_CTRL QUIT
-trap exit_CTRL SIGINT
