@@ -56,8 +56,8 @@ trap exit_EXIT EXIT
 trap exit_CTRL QUIT
 trap exit_CTRL SIGINT
 ```
-This way the Script catches when the user is pressing strg+c or the script get interrupted by other ways.
-That way you can call the cleanup function even if the script dies while running.
+So the script catches when the user pressed ctrl+c or the it got interrupted by other ways.
+This way you can call the cleanup function even if the script dies while running.
 
 ## Changing Colors
 Just change the color pallet values at the top of the script as you whish.
