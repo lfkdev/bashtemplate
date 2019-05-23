@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ########################################################
-# Author:                                              #
-# Info:                                                #
-# License:                                             #
+# Author: lfkdev                                       #
+# Info: example usage script                           #
+# License: MIT (c)                                     #
 ########################################################
 
 # color pallet
