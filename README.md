@@ -28,7 +28,7 @@ warn "This is not normal!"
 succ "Finished without errors!"
 debug "I'm some info just for the devs!"
 err "Error, something is wrong!"
-die "Error, exiting now!"
+err_die "Error, exiting now!"
 ```
 
 In addition, some functions have more features than just clean output.
