@@ -59,6 +59,23 @@ trap exit_CTRL SIGINT
 The trap function ensures that the script recognizes if it is aborted by the user (ctrl+c), or if it crashes due to other reasons.
 As soon as it detects an abort, the cleanup function is started, thus ensuring that the cleanup function also runs in case of unplanned aborts.
 
+This function is ALWAYS started when the script ends. Therefore the cleanup function is not included in the main function.
+```bash
+exit_EXIT() {
+  info "Script ended! Cleanup & Exit."
+  cleanup
+  exit 1
+}
+```
+
+This function is called when the user presses ctrl+c.
+```bash
+exit_CTRL() {
+  err "User pressed CTRL+C!"
+  exit 1
+}
+```
+
 ## Changing Colors
 Just change the color pallet values at the top of the script as you whish.
 ```bash
