@@ -1,5 +1,5 @@
 # Bash template
-Use this bash template for your next script for clean output and better error handling.
+Use this bash-template for your next script! This will give you cleaner output, better error handling and more features.
 This script is based on the rules of 
 [Googles Styleguide](https://google.github.io/styleguide/shell.xml)
 and 
@@ -56,8 +56,8 @@ trap exit_EXIT EXIT
 trap exit_CTRL QUIT
 trap exit_CTRL SIGINT
 ```
-So the script catches when the user pressed ctrl+c or the it got interrupted by other ways.
-This way you can call the cleanup function even if the script dies while running.
+The trap function ensures that the script recognizes if it is aborted by the user (ctrl+c), or if it crashes due to other reasons.
+As soon as it detects an abort, the cleanup function is started, thus ensuring that the cleanup function also runs in case of unplanned aborts.
 
 ## Changing Colors
 Just change the color pallet values at the top of the script as you whish.
@@ -76,7 +76,7 @@ wget -O mynewscript.sh https://raw.githubusercontent.com/lfkdev/bashtemplate/mas
 chmod +x mynewscript.sh
 ```
 
-Fill in your info in the metabox
+Fill your information into the metabox
 ```bash
 ####################################################
 # Author:                                          #
