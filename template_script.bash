@@ -129,6 +129,3 @@ while getopts ":hd" o; do
 done
 
 main
-trap exit_EXIT EXIT
-trap exit_CTRL QUIT
-trap exit_CTRL SIGINT
