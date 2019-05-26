@@ -33,12 +33,12 @@ err_die "Error, exiting now!"
 
 In addition, some functions have more features than just clean output.
 ### Debug function
-The debug() funktion will only show up if boolean 'is_debug' is true. This is made by the -d parameter. So devs can just execute the script with -d to view all debug messages.
+The debug() function will only show up if boolean 'is_debug' is true. This is made by the -d parameter. So devs can just execute the script with -d to view all debug messages.
 ```bash
 $ bash /usr/local/bin/script.sh -d
 ```
 ### Err-Die function
-The err_die() funktion redirects the message to STDERR, 
+The err_die() function redirects the message to STDERR, 
 starts the cleanup function and then exits.
 You can call err_die() with "1" as argument to show the help before exiting.
 ```bash
