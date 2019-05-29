@@ -74,7 +74,7 @@ showdate() {
   printf "$_date"
 }
 
-# The debug() funktion will only show up if boolean 'is_debug' is true
+# The debug() function will only show up if boolean 'is_debug' is true
 debug () {
   local _date
   _date=$(showdate)
