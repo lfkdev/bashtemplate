@@ -16,8 +16,7 @@ readonly purple="\\033[0;35m"
 is_debug=false # debugmode
 
 trap exit_EXIT EXIT
-trap exit_CTRL QUIT
-trap exit_CTRL SIGINT
+trap exit_CTRL QUIT SIGINT
 
 main() {
   example
