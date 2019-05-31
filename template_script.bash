@@ -17,8 +17,7 @@ is_debug=false # debugmode
 
 #catch getting closed and interrupted by ctrl+c
 trap exit_EXIT EXIT
-trap exit_CTRL QUIT
-trap exit_CTRL SIGINT
+trap exit_CTRL QUIT SIGINT
 
 main() {
   #function1
