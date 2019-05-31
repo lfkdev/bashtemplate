@@ -53,8 +53,7 @@ err "This is an error but I can continue anyway."
 The following traps are builtin:
 ```bash
 trap exit_EXIT EXIT
-trap exit_CTRL QUIT
-trap exit_CTRL SIGINT
+trap exit_CTRL QUIT SIGINT
 ```
 The trap function ensures that the script recognizes if it is aborted by the user (ctrl+c), or if it crashes due to other reasons.
 As soon as it detects an abort, the cleanup function is started, thus ensuring that the cleanup function also runs in case of unplanned aborts.
