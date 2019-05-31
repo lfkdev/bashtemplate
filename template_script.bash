@@ -40,7 +40,6 @@ err_die() {
   _date=$(showdate)
   echo -e "[$_date][${red}ERROR${cf}]: $1 -> use -h parameter for help." 1>&2
   echo -e "[$_date][${red}ERROR${cf}]: Cleaning & Exiting."
-  cleanup
   if [[ "$2" == "1" ]]; then
     showhelp
   fi
