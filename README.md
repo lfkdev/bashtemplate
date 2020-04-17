@@ -103,4 +103,4 @@ Fill your information into the metabox
 
 Now start creating your code with the output functions and write every function in the main one! Have fun
 
-If you have any problems or whishes let me now.
+If you have any problems or wishes let me now.
