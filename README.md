@@ -7,7 +7,7 @@ and
 
 Output example:
 <p align="center">
-  <img src="https://s18.directupload.net/images/190518/92au6td4.png">
+  <img src="https://raw.githubusercontent.com/lfkdev/bashtemplate/master/screenshot.png">
 </p>
 
 There are the following output classes: info, warn, success, debug and error.
